@@ -114,6 +114,7 @@ Further information:
 [number8](https://github.com/Dayinu/lab01/blob/main/number8.txt)
 [number8_2](https://github.com/Dayinu/lab01/blob/main/number8_2.txt)
 [number8_3](https://github.com/Dayinu/lab01/blob/main/number8_3.txt)
+
 9. Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию `~/boost-libs`.
 ```sh
 $ mkdir ~/boost-libs
