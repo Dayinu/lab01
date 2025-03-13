@@ -77,7 +77,7 @@ $ find -name "any.hpp"
 ```
 7. Выведите в консоль все файлы, где упоминается последовательность `boost::asio`.
 ```sh
-$ grep -r "boost::asio" boost_1_69_0
+$ grep -r "boost::asio" boost_1_69_0 >number7
 ```
 [number7](https://github.com/Dayinu/lab01/blob/main/number7.txt)
 
