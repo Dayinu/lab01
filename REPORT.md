@@ -84,8 +84,8 @@ $ grep -r "boost::asio" boost_1_69_0 >number7
 8. Скомпилирутйе *boost*. Можно воспользоваться [инструкцией](https://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html#or-build-custom-binaries) или [ссылкой](https://codeyarns.com/2017/01/24/how-to-build-boost-on-linux/).
 ```sh
 $ ./bootstrap.sh
-$ ./b2
-$ sudo ./b2 install
+$ ./b2 >number8
+$ sudo ./b2 install >number8_2
 $ ./b2 install -j 8 >number8_3
 
 Building Boost.Build engine with toolset gcc... tools/build/src/engine/bin.linuxx86_64/b2
