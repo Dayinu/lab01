@@ -78,7 +78,6 @@ $ find -name "any.hpp"
 7. Выведите в консоль все файлы, где упоминается последовательность `boost::asio`.
 ```sh
 $ grep -r "boost::asio" boost_1_69_0
-<вывод команды>
 ```
 [number7](https://github.com/Dayinu/lab01/blob/main/number7.txt)
 
@@ -111,7 +110,7 @@ Further information:
    - Boost.Build documentation:
      http://www.boost.org/build/doc/html/index.html
 ```
-Вывод каждой из достаточно больштх команд:
+Вывод каждой из достаточно больших команд:
 [number8](https://github.com/Dayinu/lab01/blob/main/number8.txt)
 [number8_2](https://github.com/Dayinu/lab01/blob/main/number8_2.txt)
 [number8_3](https://github.com/Dayinu/lab01/blob/main/number8_3.txt)
