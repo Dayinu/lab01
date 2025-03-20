@@ -122,47 +122,47 @@ $ cp ~/boost_1_69_0/stage/lib/*.a ~/boost-libs/
 ```
 10. Подсчитайте сколько занимает дискового пространства каждый файл в этой директории.
 ```sh
-$ du -a ~/boost-libs
-208     /home/linux/boost-libs/libboost_prg_exec_monitor.a
-152     /home/linux/boost-libs/libboost_container.a
-344     /home/linux/boost-libs/libboost_iostreams.a
-776     /home/linux/boost-libs/libboost_wserialization.a
-20      /home/linux/boost-libs/libboost_context.a
-404     /home/linux/boost-libs/libboost_filesystem.a
-36      /home/linux/boost-libs/libboost_stacktrace_addr2line.a
-4       /home/linux/boost-libs/libboost_exception.a
-20      /home/linux/boost-libs/libboost_stacktrace_backtrace.a
-2244    /home/linux/boost-libs/libboost_test_exec_monitor.a
-4540    /home/linux/boost-libs/libboost_wave.a
-232     /home/linux/boost-libs/libboost_chrono.a
-4       /home/linux/boost-libs/libboost_stacktrace_noop.a
-4       /home/linux/boost-libs/libboost_system.a
-1172    /home/linux/boost-libs/libboost_serialization.a
-828     /home/linux/boost-libs/libboost_graph.a
-232     /home/linux/boost-libs/libboost_fiber.a
-80      /home/linux/boost-libs/libboost_random.a
-52      /home/linux/boost-libs/libboost_timer.a
-4       /home/linux/boost-libs/libboost_atomic.a
-152     /home/linux/boost-libs/libboost_date_time.a
-16      /home/linux/boost-libs/libboost_stacktrace_basic.a
-320     /home/linux/boost-libs/libboost_contract.a
-3148    /home/linux/boost-libs/libboost_regex.a
-1520    /home/linux/boost-libs/libboost_program_options.a
-2228    /home/linux/boost-libs/libboost_unit_test_framework.a
-18744   /home/linux/boost-libs
+$ du -s *                              
+4       libboost_atomic.a
+232     libboost_chrono.a
+152     libboost_container.a
+20      libboost_context.a
+320     libboost_contract.a
+152     libboost_date_time.a
+4       libboost_exception.a
+232     libboost_fiber.a
+404     libboost_filesystem.a
+828     libboost_graph.a
+344     libboost_iostreams.a
+208     libboost_prg_exec_monitor.a
+1520    libboost_program_options.a
+80      libboost_random.a
+3148    libboost_regex.a
+1172    libboost_serialization.a
+36      libboost_stacktrace_addr2line.a
+20      libboost_stacktrace_backtrace.a
+16      libboost_stacktrace_basic.a
+4       libboost_stacktrace_noop.a
+4       libboost_system.a
+2244    libboost_test_exec_monitor.a
+52      libboost_timer.a
+2228    libboost_unit_test_framework.a
+4540    libboost_wave.a
+776     libboost_wserialization.a
 
 ```
 11. Найдите *топ10* самых "тяжёлых".
 ```sh
-$ du -a ~/boost-libs | sort -hr | head
-18744   /home/linux/boost-libs
-4540    /home/linux/boost-libs/libboost_wave.a
-3148    /home/linux/boost-libs/libboost_regex.a
-2244    /home/linux/boost-libs/libboost_test_exec_monitor.a
-2228    /home/linux/boost-libs/libboost_unit_test_framework.a
-1520    /home/linux/boost-libs/libboost_program_options.a
-1172    /home/linux/boost-libs/libboost_serialization.a
-828     /home/linux/boost-libs/libboost_graph.a
-776     /home/linux/boost-libs/libboost_wserialization.a
-404     /home/linux/boost-libs/libboost_filesystem.a
+$ du -s * | sort -rh | head -10 
+4540    libboost_wave.a
+3148    libboost_regex.a
+2244    libboost_test_exec_monitor.a
+2228    libboost_unit_test_framework.a
+1520    libboost_program_options.a
+1172    libboost_serialization.a
+828     libboost_graph.a
+776     libboost_wserialization.a
+404     libboost_filesystem.a
+344     libboost_iostreams.a
+
 ```
